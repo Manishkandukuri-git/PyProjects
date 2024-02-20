@@ -1,6 +1,14 @@
+
+
+#Only for Whatsapp
 # import pywhatkit
 # for _ in range(10):
 #     pywhatkit.sendwhatmsg("+1XXXXXXXXXX","What's going on with you",2,17)
+
+
+
+
+#For any GUI with Text Box to Fill in:
 import pyautogui
 
 import time
