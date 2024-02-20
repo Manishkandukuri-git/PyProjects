@@ -5,9 +5,7 @@ import csv
 from datetime import datetime
 
 LINK = "https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=m1+macbook+air&_sacat=0"
-#python3 -m venv myenv
-#source myenv/bin/activate
-#exit
+#LINK = "https://www.ebay.com/b/Apple-iPad-Pro-3rd-Generation/171485/bn_7111808617"
 
 def get_prices_by_link(link):
     # get source
@@ -45,3 +43,8 @@ if __name__ == "__main__":
     prices_without_outliers = remove_outliers(prices)
     print(get_average(prices_without_outliers))
     save_to_file(prices)
+
+#HinT: venv to avoid huge number of additional dependencies(OPTIONAL)
+#python3 -m venv myenv
+#source myenv/bin/activate
+#exit
